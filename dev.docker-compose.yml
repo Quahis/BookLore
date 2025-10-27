@@ -36,9 +36,10 @@ services:
       retries: 5
 
   ui:
-    image: node:22-alpine
-    command: sh -c "cd /angular-app && npm install -g @angular/cli --force && npm install --force && ng serve --host 0.0.0.0"
+    image: marcaureln/volta:latest
+    command: sh -c "cd /angular-app && pnpm install && pnpm ng serve --host 0.0.0.0"
     environment:
+      - VOLTA_FEATURE_PNPM=1
       - NODE_ENV=development
     stdin_open: true
     tty: true
