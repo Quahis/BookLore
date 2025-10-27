@@ -70,7 +70,7 @@ $RECYCLE.BIN/
 *.lnk
 
 
-### Kotlin template
+### Java template
 # Compiled class file
 *.class
 
@@ -158,8 +158,9 @@ build/Release
 # Dependency directories
 node_modules/
 jspm_packages/
-yarn.lock
 package-lock.json
+yarn.lock
+pnpm-lock.yaml
 
 # Snowpack dependency directory (https://snowpack.dev/)
 web_modules/
@@ -336,5 +337,8 @@ fabric.properties
 
 
 ### Project
+docker
 booklore-api/src/main/resources/application-local.yaml
-example-chart/charts/
+
+examples/chart/charts/
+!examples/docker
