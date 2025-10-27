@@ -11,8 +11,29 @@
     "lint": "ng lint"
   },
   "private": true,
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^20.3.6",
+    "@angular/cli": "^20.3.6",
+    "@angular/compiler-cli": "^20.3.5",
+    "@tailwindcss/typography": "^0.5.16",
+    "@types/jasmine": "^5.1.8",
+    "@types/showdown": "^2.0.6",
+    "angular-eslint": "^20.4.0",
+    "autoprefixer": "^10.4.21",
+    "eslint": "^9.33.0",
+    "jasmine-core": "^5.7.1",
+    "karma": "^6.4.4",
+    "karma-chrome-launcher": "^3.2.0",
+    "karma-coverage": "^2.2.1",
+    "karma-jasmine": "^5.1.0",
+    "karma-jasmine-html-reporter": "^2.1.0",
+    "tailwindcss": "3.4.17",
+    "typescript": "~5.9.3",
+    "typescript-eslint": "^8.39.0"
+  },
   "dependencies": {
     "@angular/animations": "^20.3.5",
+    "@angular/cdk": "^20.2.9",
     "@angular/common": "^20.3.5",
     "@angular/compiler": "^20.3.5",
     "@angular/core": "^20.3.5",
@@ -44,27 +65,6 @@
     "tailwindcss-primeui": "^0.6.1",
     "tslib": "^2.8.1",
     "ws": "^8.18.2",
-    "zone.js": "^0.15.1",
-    "@angular/cdk": "^20.2.9"
-  },
-  "devDependencies": {
-    "@angular-devkit/build-angular": "^20.3.6",
-    "@angular/cli": "^20.3.6",
-    "@angular/compiler-cli": "^20.3.5",
-    "@tailwindcss/typography": "^0.5.16",
-    "@types/jasmine": "^5.1.8",
-    "@types/showdown": "^2.0.6",
-    "angular-eslint": "^20.4.0",
-    "autoprefixer": "^10.4.21",
-    "eslint": "^9.33.0",
-    "jasmine-core": "^5.7.1",
-    "karma": "^6.4.4",
-    "karma-chrome-launcher": "^3.2.0",
-    "karma-coverage": "^2.2.1",
-    "karma-jasmine": "^5.1.0",
-    "karma-jasmine-html-reporter": "^2.1.0",
-    "tailwindcss": "3.4.17",
-    "typescript": "~5.9.3",
-    "typescript-eslint": "^8.39.0"
+    "zone.js": "^0.15.1"
   }
 }
