@@ -1,5 +1,5 @@
 # Stage 1: Build the Angular app
-FROM marcaureln/volta:2.0.1 AS angular-build
+FROM marcaureln/volta:2.0.2 AS angular-build
 ENV VOLTA_FEATURE_PNPM=1
 
 WORKDIR /angular-app
