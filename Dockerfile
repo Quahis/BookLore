@@ -1,17 +1,14 @@
 # Stage 1: Build the Angular app
-FROM node:22-alpine AS angular-build
+FROM marcaureln/volta:latest AS angular-build
+ENV VOLTA_FEATURE_PNPM=1
 
 WORKDIR /angular-app
 
-COPY ./booklore-ui/package.json ./booklore-ui/package-lock.json ./
-RUN npm config set registry http://registry.npmjs.org/ \
-    && npm config set fetch-retries 5 \
-    && npm config set fetch-retry-mintimeout 20000 \
-    && npm config set fetch-retry-maxtimeout 120000 \
-    && npm install --force
-COPY ./booklore-ui /angular-app/
+COPY ./booklore-ui/package.json  ./
+RUN pnpm install
 
-RUN npm run build --configuration=production
+COPY ./booklore-ui /angular-app/
+RUN pnpm build --configuration=production
 
 # Stage 2: Build the Spring Boot app with Gradle
 FROM gradle:9.1-jdk25-alpine AS springboot-build
