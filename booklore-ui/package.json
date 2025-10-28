@@ -13,9 +13,9 @@
   "private": true,
   "volta": {
     "node": "24.11.0",
-    "pnpm": "10.19.0"
+    "pnpm": "10.20.0"
   },
-  "packageManager": "pnpm@10.19.0",
+  "packageManager": "pnpm@10.20.0",
   "devDependencies": {
     "@angular-devkit/build-angular": "20.3.7",
     "@angular/cli": "20.3.7",
