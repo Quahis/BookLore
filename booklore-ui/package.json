@@ -12,7 +12,7 @@
   },
   "private": true,
   "volta": {
-    "node": "22.21.0",
+    "node": "24.11.0",
     "pnpm": "10.19.0"
   },
   "packageManager": "pnpm@10.19.0",
